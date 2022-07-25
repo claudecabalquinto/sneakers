@@ -11,9 +11,26 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
   height: 34px;
 }
 
 .login img {
   height: 30px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.shoe {
+  height: 230px;
+  width: 230px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
 }
