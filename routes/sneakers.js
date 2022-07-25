@@ -4,12 +4,9 @@ const sneakersCtrl = require('../controllers/sneakers');
 const isLoggedIn = require('../config/auth');
 
 
-router.get('/', sneakersCtrl.index);
-
+router.get('/blog', sneakersCtrl.index);
 router.get('/new', isLoggedIn, sneakersCtrl.new);
-
 router.get('/:id', sneakersCtrl.show);
-
-router.post('/', isLoggedIn, sneakersCtrl.create);
+router.post('/blog', isLoggedIn, sneakersCtrl.create);
 
 module.exports = router;

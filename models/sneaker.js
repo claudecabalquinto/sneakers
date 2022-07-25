@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 // shortcut variable
 const Schema = mongoose.Schema;
 
-const sneakerSchema = new Schema ({
+const sneakerSchema = new Schema({
     brand: {
         type: String,
         enum: ['nike', 'adidas', 'yeezy', 'vans']
@@ -18,4 +18,4 @@ const sneakerSchema = new Schema ({
     },
 });
 
-mongoose.exports =  mongoose.model('Sneaker', sneakerSchema)
+module.exports =  mongoose.model('Sneaker', sneakerSchema)

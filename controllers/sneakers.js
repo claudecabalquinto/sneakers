@@ -8,13 +8,15 @@ module.exports = {
 };
 
 function index(req, res) {
-    
-      res.render('sneakers/index')
-    };
+  Sneaker.find({}, function(err, sneakers) {
+    console.log(sneakers)
+    res.render('sneakers/blog', { title: 'All Sneakers', sneakers });
+  });
+}
   
 
  function show(req, res) {
-   res.render('sneakers/blog')
+   res.render('sneakers/details')
  }
 
   function newSneaker(req, res) {
@@ -26,5 +28,5 @@ function index(req, res) {
     sneaker.save(function(err) {
       if(err) return res.redirect('/sneakers/new');
     });
-    res.redirect('/sneakers')
+    res.redirect('/sneakers/blog')
   }
