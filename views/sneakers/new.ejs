@@ -2,5 +2,21 @@
 
 <h1>NEW</h1>
 
-
+<form id="new-form" action="/sneakers/blog" method="POST">
+    <label>Brand:</label>
+    <select name="brand">
+      <option value="nike">Nike</option>
+      <option value="adidas">Adidas</option>
+      <option value="yeezy">Yeezy</option>
+      <option value="vans">Vans</option>
+    </select><br>
+    <label>Name:</label>
+    <input type="text" name="name">
+    <label>Colorway:</label>
+    <input type="text" name="colorWay">
+    <label>Release Year:</label>
+    <input type="text" name="releaseYear">
+    <input type="submit" value="Add Sneaker">
+  </form>
+  
 <%- include('../partials/footer') %>
