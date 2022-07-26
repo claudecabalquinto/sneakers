@@ -8,7 +8,7 @@ module.exports = {
 async function deleteReview(req, res, next) {
   try {
     const sneaker = await Sneaker.findOne({'reviews._id': req.params.id, 'reviews.user': req.user._id});
-    if (!sneaker) throw new Error('Nice Try!');
+    if (!sneaker) throw new Error('Error');
     sneaker.reviews.remove(req.params.id);
     await sneaker.save();
     res.redirect(`/sneakers/${sneaker._id}`);

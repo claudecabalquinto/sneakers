@@ -9,4 +9,5 @@ router.get('/new', isLoggedIn, sneakersCtrl.new);
 router.get('/:id', sneakersCtrl.show);
 router.post('/blog', isLoggedIn, sneakersCtrl.create);
 
+
 module.exports = router;

@@ -31,3 +31,5 @@ function show(req, res) {
     });
     res.redirect('/sneakers/blog')
   }
+
+  
