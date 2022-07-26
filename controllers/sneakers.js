@@ -15,8 +15,10 @@ function index(req, res) {
   
 
 function show(req, res) {
-  res.render('sneakers/details')
-}
+  Sneaker.findById(req.params.id, function(err, sneaker) {
+  res.render("sneakers/details", { title: "Sneaker Detail", sneaker});
+});
+};
 
   function newSneaker(req, res) {
     res.render('sneakers/new', { title: 'Add Sneaker' });
