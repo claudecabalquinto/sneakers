@@ -35,6 +35,6 @@ const sneakerSchema = new Schema({
         type: Number,
       },
     reviews: [reviewSchema]
-});
+    });
 
 module.exports =  mongoose.model('Sneaker', sneakerSchema)
