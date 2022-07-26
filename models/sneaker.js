@@ -2,6 +2,24 @@ const mongoose = require('mongoose');
 // shortcut variable
 const Schema = mongoose.Schema;
 
+const reviewSchema = new Schema({
+    content: {
+      type: String,
+      match: /.{10,}/
+    },
+    rating: {
+      type: Number,
+      min: 1,
+      max: 5,
+      default: 5
+    },
+    user: {type: Schema.Types.ObjectId, ref: 'User'},
+    userName: String,
+    userAvatar: String
+  }, {
+    timestamps: true
+  });
+
 const sneakerSchema = new Schema({
     brand: {
         type: String,
@@ -15,6 +33,7 @@ const sneakerSchema = new Schema({
     },
     releaseYear: {
         type: Number,
+    reviews: [reviewSchema]
     },
 });
 

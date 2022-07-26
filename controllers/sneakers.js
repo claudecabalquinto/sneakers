@@ -9,15 +9,14 @@ module.exports = {
 
 function index(req, res) {
   Sneaker.find({}, function(err, sneakers) {
-    console.log(sneakers)
     res.render('sneakers/blog', { title: 'All Sneakers', sneakers });
   });
 }
   
 
- function show(req, res) {
-   res.render('sneakers/details')
- }
+function show(req, res) {
+  res.render('sneakers/details')
+}
 
   function newSneaker(req, res) {
     res.render('sneakers/new', { title: 'Add Sneaker' });
