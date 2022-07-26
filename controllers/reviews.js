@@ -6,6 +6,7 @@ module.exports = {
 
 
 function create(req, res) {
+  console.log(req.body)
   Sneaker.findById(req.params.id, function(err, sneaker) {
    
     req.body.user = req.user._id;

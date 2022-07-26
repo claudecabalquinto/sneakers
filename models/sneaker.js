@@ -33,8 +33,8 @@ const sneakerSchema = new Schema({
     },
     releaseYear: {
         type: Number,
+      },
     reviews: [reviewSchema]
-    },
 });
 
 module.exports =  mongoose.model('Sneaker', sneakerSchema)
