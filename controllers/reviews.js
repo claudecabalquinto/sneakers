@@ -8,7 +8,6 @@ module.exports = {
 };
 
 function update(req, res) {
-  console.log(req.body)
   Sneaker.findOne(
     {'reviews._id': req.params.id},
     function(err, sneaker) {
