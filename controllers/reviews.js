@@ -2,8 +2,32 @@ const Sneaker = require('../models/sneaker');
 
 module.exports = {
   create,
-  delete: deleteReview
+  delete: deleteReview,
+  edit,
+  update
 };
+
+function update(req, res) {
+  console.log(req.body)
+  Sneaker.findOne(
+    {'reviews._id': req.params.id},
+    function(err, sneaker) {
+      const commentSubdoc = sneaker.reviews.id(req.params.id);
+      if (!commentSubdoc.user.equals(req.user._id)) return res.redirect(`/sneakers/${sneaker._id}`);
+      commentSubdoc.content = req.body.content;
+      sneaker.save(function(err) {
+        res.redirect(`/sneakers/${sneaker._id}`);
+      });  
+    }
+  );
+}
+
+function edit(req, res) {
+  Sneaker.findOne({'reviews._id': req.params.id}, function(err, sneaker) {
+    if (err || !sneaker) return res.redirect('/sneakers');
+    res.render('sneakers/edits', {sneaker, review: req.params.id});
+  });
+}
 
 async function deleteReview(req, res, next) {
   try {
@@ -31,3 +55,7 @@ function create(req, res) {
     });
   });
 }
+
+
+
+

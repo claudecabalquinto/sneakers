@@ -46,6 +46,11 @@
                   <button type="submit">X</button>
                 </form>
               <% } %>
+              <% if ( user?._id.equals(r.user) ) { %>
+                <a href="/sneakers/<%= r._id %>/reviews/edit">
+                  <button type="submit">Edit</button>
+                </a>
+              <% } %>
           </tr>
           <% }); %>
           <tr>
