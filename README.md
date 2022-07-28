@@ -19,10 +19,10 @@ Sneakers is a Sneaker blog and hub where people can get information and express 
 
 
 **TECHNOLOGY:**<br>
-[MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
-[HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
-[CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
-[Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
-[Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
-[VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
+![MongoDB](https://img.shields.io/badge/-MongoDB-333?style=flat&logo=mongodb)
+![HTML5](https://img.shields.io/badge/-HTML5-333?style=flat&logo=html5)
+![CSS3](https://img.shields.io/badge/-CSS-333?style=flat&logo=css3)
+![Heroku](https://img.shields.io/badge/-Heroku-333?style=flat&logo=heroku)
+![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
+![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 
