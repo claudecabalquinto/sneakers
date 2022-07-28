@@ -1,0 +1,53 @@
+
+
+body > main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+
+
+
+#list {
+  border-radius: 4px;
+  background-color: whitesmoke;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  left: 100%
+}
+
+
+
+table {
+  font-size: 20px;
+}
+
+
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
+#list td:nth-child(2), #list td:nth-child(3){
+  min-width: 100px;
+}
+
+#list a {
+  border-radius: 4px;
+  padding: 4px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+
