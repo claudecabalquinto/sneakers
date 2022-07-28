@@ -13,20 +13,8 @@ body {
 
 
 
-body > main {
-  grid-area: main;
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  padding: 20px;
-  overflow-y: scroll;
-}
-
-
-
 
 #new-form {
-  display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, minmax(auto, 22rem));
 }
