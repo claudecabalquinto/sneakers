@@ -1,14 +1,4 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  margin: 0;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 50px 1fr;
-  grid-template-areas: 
-    "nav"
-    "main"
-}
+
 
 
 body > main {
@@ -19,6 +9,16 @@ body > main {
   background-color: white;
   padding: 20px;
   overflow-y: scroll;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
 }
 
 
@@ -35,6 +35,37 @@ body > main {
   padding: 5px;
   border-radius: 5px;
 }
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin-left: auto;
+}
+
+table {
+  font-size: 20px;
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin-left: auto;
+}
+
+table {
+  font-size: 20px;
+}
+
+table thead th {
+  padding: 5px;
+  border-bottom: 2px solid #424748;
+}
+
+table td {
+  padding: 10px;
+  text-align: center;
+}
+
 
 #add-review-form {
   display: grid;
