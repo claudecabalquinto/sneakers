@@ -11,7 +11,7 @@
 <p>
 Sneakers is a Sneaker blog and hub where people can get information and express how they feel on the latest sneaker.
 </p>
-
+</div>
 **screenshots:**<br>
 <img src = "https://i.imgur.com/IZtVvHM.png" />
 <br>
