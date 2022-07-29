@@ -47,7 +47,8 @@ Sneakers is a Sneaker blog and hub where people can get information and express 
     >https://sneakers-cc.herokuapp.com/</a
   >
 </details>
-**NEXT STEPS:**<br>
+
+**NEXTSTEPS:**<br>
 Implement API<br>
 Search Bar<br>
 filter by shoe/brand<br>
