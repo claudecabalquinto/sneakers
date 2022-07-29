@@ -1,35 +1,26 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  justify-content: space-evenly;
+}
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+.grid-item {
+  padding: 20px;
+  text-align: center;
 }
 
 
-  .column {
-    flex: 100%;
-    padding: 5px;
-    width: 150px;
-  }
-
-
-body > main {
+body>main {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: white;
   padding: 20px;
   overflow-y: scroll;
-  width: 2fr;
 }
 
 .shoe {
   height: 230px;
   width: 230px;
 }
-
-h2 {
-  width: 1000px;
-  justify-content: space-evenly;
-}
-
