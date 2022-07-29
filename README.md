@@ -33,6 +33,20 @@ Sneakers is a Sneaker blog and hub where people can get information and express 
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 
+**LINKS:**<br>
+<details>
+ <summary>Trello Board</summary>
+  <a href="https://trello.com/b/mEZGVl2i/p2"
+    >https://trello.com/b/mEZGVl2i/p2</a
+  >
+</details>
+
+<details open>
+  <summary>Deployed Link (Heroku)</summary>
+  <a href="https://sneakers-cc.herokuapp.com/"
+    >https://sneakers-cc.herokuapp.com/</a
+  >
+</details>
 **NEXT STEPS:**<br>
 Implement API<br>
 Search Bar<br>
