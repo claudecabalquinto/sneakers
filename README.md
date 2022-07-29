@@ -8,7 +8,7 @@
 <h5>Claude Cabalquinto</h5>
 <a href="https://www.linkedin.com/in/claudecabalquinto/" target="_blank">
 <img
-  src="https://img.shields.io/badge/-@username-blue?style=flat&logo=Linkedin&logoColor=white"
+  src="https://img.shields.io/badge/-@claudecabalquinto-blue?style=flat&logo=Linkedin&logoColor=white"
 />
 </a>
 
