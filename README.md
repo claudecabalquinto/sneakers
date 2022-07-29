@@ -6,6 +6,11 @@
 <h3>https://sneakers-cc.herokuapp.com/</h3>
 
 <h5>Claude Cabalquinto</h5>
+<a href="https://www.linkedin.com/in/claudecabalquinto/" target="_blank">
+<img
+  src="https://img.shields.io/badge/-@username-blue?style=flat&logo=Linkedin&logoColor=white"
+/>
+</a>
 
 <h1>Description:</h1>
 <p>
