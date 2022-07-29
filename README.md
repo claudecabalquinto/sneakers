@@ -28,3 +28,9 @@ Sneakers is a Sneaker blog and hub where people can get information and express 
 ![Github](https://img.shields.io/badge/-GitHub-333?style=flat&logo=github)
 ![VSCode](https://img.shields.io/badge/-VS_Code-333?style=flat&logo=visualstudio)
 
+**NEXT STEPS:**<br>
+Implement API
+Search Bar
+filter by shoe/brand
+upload pictures in the blog
+
