@@ -23,8 +23,8 @@ function update(req, res) {
 
 function edit(req, res) {
   Sneaker.findOne({'reviews._id': req.params.id}, function(err, sneaker) {
-    if (err || !sneaker) return res.redirect('/sneakers');
-    res.render('sneakers/edits', {sneaker, review: req.params.id});
+    const review = sneaker.reviews.id(req.params.id);
+    res.render('sneakers/edits', {review, sneaker});
   });
 }
 

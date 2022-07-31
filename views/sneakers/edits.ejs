@@ -4,9 +4,9 @@
 
 <% if (user) { %>
     <form id="add-review-form" method="POST"
-    action="/sneakers/<%= sneaker._id %>/reviews/<%= review %>?_method=put">
+    action="/sneakers/<%= sneaker._id %>/reviews/<%= review.id %>?_method=PUT">
       <label>Review:</label>
-      <textarea name="content"></textarea>
+      <textarea name="content" value="<%= review.content %>"><%= review.content %></textarea>
       <label>Rating:</label>
       <select name="rating">
         <option value="1">1</option>
@@ -15,7 +15,7 @@
         <option value="4">4</option>
         <option value="5" selected>5</option>
       </select>
-      <input type="submit" value="Add Review">
+      <input type="submit" value="Update Review">
     </form>
   <% } %>
 

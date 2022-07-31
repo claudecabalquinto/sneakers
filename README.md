@@ -48,7 +48,7 @@ Sneakers is a Sneaker blog and hub where people can get information and express 
   >
 </details>
 
-**NEXTSTEPS:**<br>
+**NEXT STEPS:**<br>
 Implement API<br>
 Search Bar<br>
 filter by shoe/brand<br>

@@ -2,6 +2,15 @@
 <link rel="stylesheet" href="/stylesheets/details.css">
 <h1>Details</h1>
 
+<section id="details-page">
+  <div class="title">Brand:</div>
+  <div><%= sneaker.brand %></div>
+  <div class="title">Name:</div>
+  <div><%= sneaker.name %></div>
+  <div class="title">Colorway:</div>
+  <div><%= sneaker.colorWay %></div>
+  <div class="title">Release Year:</div><div><%= sneaker.releaseYear %></div>
+</section>
 
 <% if (user) { %>
     <form id="add-review-form" method="POST"

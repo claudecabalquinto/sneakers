@@ -1,6 +1,4 @@
 
-
-
 body > main {
   grid-area: main;
   display: flex;
@@ -79,3 +77,10 @@ table td {
   grid-column: 2 / 3;
 }
 
+.title {
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
