@@ -14,6 +14,7 @@ function update(req, res) {
       const commentSubdoc = sneaker.reviews.id(req.params.id);
       if (!commentSubdoc.user.equals(req.user._id)) return res.redirect(`/sneakers/${sneaker._id}`);
       commentSubdoc.content = req.body.content;
+      commentSubdoc.rating = req.body.rating;
       sneaker.save(function(err) {
         res.redirect(`/sneakers/${sneaker._id}`);
       });  
